@@ -1,27 +1,116 @@
 # TodoListSignalStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+El proyecto se genero mediante [Angular CLI](https://github.com/angular/angular-cli) versión 18.0.5.
 
-## Development server
+## Detalle proyecto angular
+```
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Angular CLI: 18.0.5
+Node: 20.15.0
+Package Manager: npm 10.8.1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular:
+...
 
-## Build
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1800.5 (cli-only)
+@angular-devkit/core         18.0.5 (cli-only)
+@angular-devkit/schematics   18.0.5 (cli-only)
+@schematics/angular          18.0.5 (cli-only)
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalaciones y configuraciones
 
-## Running unit tests
+### Tailwindcss
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[Documentación instalación Tailwindcss](https://tailwindcss.com/docs/guides/angular)
 
-## Running end-to-end tests
+### JSON Server
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### Instalación
 
-## Further help
+```sh
+npm i json-server
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+#### Configuración
+
+1.- Creamos en la raiz del proyecto el directorio `db` y dentro el archivo `db.json`
+
+2.- dentro del archivo `db.json` colocamos la siguiente estructura:
+
+```json
+{
+  "todos": []
+}
+```
+
+3.- colocamos en el `packaje.json`el siguiente script:
+
+```json
+{
+  ...,
+  "scripts": {
+    ...,
+    "json-server": "json-server db/db.json"
+  },
+  ...
+}
+```
+
+4.- lo ejecutamos desde la terminal.
+
+```sh
+npm run json-server
+```
+
+### NgRx
+
+#### SignalStore
+
+[Referencia](https://ngrx.io/guide/signals)
+
+Instalación:
+
+``` 
+ng add @ngrx/signals@next
+```
+
+#### Operators
+
+[Referencia](https://ngrx.io/guide/operators)
+
+Instalación:
+
+```
+ng add @ngrx/operators@latest
+```
+
+## Levantar el proyecto en modo desarrollo
+
+### Clonar el repo
+
+```sh
+git clone https://github.com/jplantes/TodoListSignalStore.git
+```
+### Instalación de paquetes
+
+```sh
+npm install
+```
+
+### Levantar proyecto
+
+  > Debe estar corriendo json-server para que el proyecto funcione correctamente
+
+```sh
+ng serve
+```

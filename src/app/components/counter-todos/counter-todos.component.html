@@ -1,0 +1,7 @@
+<div class="p-10 shadow-xl bg-white">
+  <p class="text-xl">Contidad de tareas: {{ todoStore.countTodos() }}</p>
+  <p class="text-xl">Contidad de tareas pendientes: {{ todoStore.pendingTodo().length }}</p>
+  <p class="text-xl">Contidad de tareas finalizadas: {{ todoStore.finishedTodo().length }}</p>
+</div>
+
+<a class="text-black text-center my-5 block" [routerLink]="[ '/' ]">Lista de pendientes</a>

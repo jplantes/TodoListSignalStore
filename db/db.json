@@ -1,0 +1,44 @@
+{
+  "todos": [
+    {
+      "id": "a96cbd72-b673-4869-ba11-e5cc9bdc2f31",
+      "task": "nuevo",
+      "complited": true
+    },
+    {
+      "id": "922f88a6-6662-4f21-9bca-253a9018fe1e",
+      "task": "otra tarea pendiente",
+      "complited": true
+    },
+    {
+      "id": "5e4fb429-55b5-4753-b533-9489f25fa886",
+      "task": "nueva tarea",
+      "complited": true
+    },
+    {
+      "id": "3ceb72ee-24b8-49f8-a460-b42dd1556f3a",
+      "task": "segunda",
+      "complited": false
+    },
+    {
+      "id": "1459ec83-f650-44d5-a7d1-9633dceb62a0",
+      "task": "tercera",
+      "complited": true
+    },
+    {
+      "id": "b8bd1e02-0bad-456e-8b07-f3acc72b11e9",
+      "task": "cuarta",
+      "complited": false
+    },
+    {
+      "id": "0db9d537-6de3-4267-96a5-34931d4c06ee",
+      "task": "quinta",
+      "complited": true
+    },
+    {
+      "id": "05e8559d-ec25-4957-90ad-861ddc04a72e",
+      "task": "sexta",
+      "complited": false
+    }
+  ]
+}
