@@ -33,6 +33,7 @@
     "@types/jasmine": "~5.1.0",
     "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.19",
+    "cypress": "^13.13.2",
     "jasmine-core": "~5.1.0",
     "json-server": "^1.0.0-beta.1",
     "karma": "~6.4.0",
